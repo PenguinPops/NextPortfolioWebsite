@@ -77,9 +77,11 @@ export default function SkillsSection() {
     <section id="skills" className="py-24 px-6 lg:px-8 bg-black/20">
       <div className="mx-auto max-w-7xl">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-white mb-4">Skills & Expertise</h2>
+          <h2 className="text-4xl font-bold text-white mb-4">
+            {t(language, "skillsTitle")}
+          </h2>
           <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-            Technologies and tools I work with to bring ideas to life
+            {t(language, "skillsDescription")}
           </p>
         </div>
 
@@ -93,7 +95,9 @@ export default function SkillsSection() {
 
               <div className="mb-2">
                 <div className="flex justify-between items-center mb-2">
-                  <span className="text-sm text-gray-300">Proficiency</span>
+                  <span className="text-sm text-gray-300">
+                    {t(language, "proficiency")}
+                  </span>
                   <span className="text-sm text-purple-300">{skill.level}%</span>
                 </div>
                 <div className="w-full bg-gray-700/50 rounded-full h-2">

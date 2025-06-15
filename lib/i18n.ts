@@ -26,7 +26,7 @@ const translations: Record<Language, Translations> = {
     skillsDescription: "Technologies and tools I work with to bring ideas to life",
     proficiency: "Proficiency",
     title1: "AI Workflow and Automation",
-    description1: "ChatGPT, DeepSeek, Claude, Gemini, DuckAI, DeepSeek API, Web Scraping, Googling, Stack Overflow",
+    description1: "ChatGPT, DeepSeek, Claude, Gemini, DeepSeek API, Web Scraping, Googling, Stack Overflow",
     title2: "Frontend Development",
     description2: "React, Next.js, TypeScript, Tailwind CSS, ChartJS",
     title3: "Backend Development",
@@ -112,7 +112,7 @@ const translations: Record<Language, Translations> = {
     skillsDescription: "Technologie i narzędzia, z których korzystam, aby wcielać pomysły w życie",
     proficiency: "Biegłość",
     title1: "AI Workflow i Automatyzacja",
-    description1: "ChatGPT, DeepSeek, Claude, Gemini, DuckAI, DeepSeek API, Web Scraping, Googling, Stack Overflow",
+    description1: "ChatGPT, Claude, Gemini, DeepSeek API, Web Scraping, Google, Stack Overflow",
     title2: "Frontend Development",
     description2: "React, Next.js, TypeScript, Tailwind CSS, ChartJS",
     title3: "Backend Development",
@@ -133,7 +133,7 @@ const translations: Record<Language, Translations> = {
     aboutDescription1:
       "Jestem pasjonatem programowania z ponad 8-letnim doświadczeniem w tworzeniu różnych programów i projektów.",
     aboutDescription2:
-      " Pracuję nad kilkoma projektami programistycznymi, a także eksploruję świat AI poprzez jego zastosowanie w moim workflow.",
+      " Pracuję nad kilkoma projektami programistycznymi, a także korzystam z AI w moim codziennym workflow.",
     aboutDescription3:
       "Oprócz tego profesjonalnie edytuję filmy, edytuję i retuszuję zdjęcia. Zajmuję się również doświadczeniami UI/UX dla sieci.",
     aboutDescription4:
