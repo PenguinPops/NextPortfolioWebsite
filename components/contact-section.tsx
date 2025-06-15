@@ -1,7 +1,6 @@
 "use client"
 
 import type React from "react"
-
 import { useState } from "react"
 import { Phone, Mail, Github, Linkedin, Send } from "lucide-react"
 import { Button } from "@/components/ui/button"
@@ -10,10 +9,13 @@ import { Textarea } from "@/components/ui/textarea"
 import { t } from "@/lib/i18n"
 import { useLanguage } from "@/hooks/use-language"
 
-
-
 export default function ContactSection() {
   const { language } = useLanguage()
+  const [isSubmitting, setIsSubmitting] = useState(false)
+  const [submitStatus, setSubmitStatus] = useState<{
+    success: boolean
+    message: string
+  } | null>(null)
 
   const [formData, setFormData] = useState({
     name: "",
@@ -23,36 +25,71 @@ export default function ContactSection() {
   })
 
   const contactLinks = [
-  {
-    icon: Phone,
-    label: t(language, "phone"),
-    value: "(+48) 668 931 666",
-    href: "tel:+48668931666",
-  },
-  {
-    icon: Mail,
-    label: t(language, "email"),
-    value: "msoltys.biz@gmail.com",
-    href: "mailto:msoltys.biz@gmail.com",
-  },
-  {
-    icon: Github,
-    label: "GitHub",
-    value: "github.com/PenguinPops",
-    href: "https://github.com/PenguinPops",
-  },
-  {
-    icon: Linkedin,
-    label: "LinkedIn",
-    value: "linkedin.com/in/michał-sołtys-2b7525239",
-    href: "https://www.linkedin.com/in/micha%C5%82-so%C5%82tys-2b7525239/",
-  },
-]
+    {
+      icon: Phone,
+      label: t(language, "phone"),
+      value: "(+48) 668 931 666",
+      href: "tel:+48668931666",
+    },
+    {
+      icon: Mail,
+      label: t(language, "email"),
+      value: "msoltys.biz@gmail.com",
+      href: "mailto:msoltys.biz@gmail.com",
+    },
+    {
+      icon: Github,
+      label: "GitHub",
+      value: "github.com/PenguinPops",
+      href: "https://github.com/PenguinPops",
+    },
+    {
+      icon: Linkedin,
+      label: "LinkedIn",
+      value: "linkedin.com/in/michał-sołtys-2b7525239",
+      href: "https://www.linkedin.com/in/micha%C5%82-so%C5%82tys-2b7525239/",
+    },
+  ]
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    // Handle form submission here
-    console.log("Form submitted:", formData)
+    setIsSubmitting(true)
+    setSubmitStatus(null)
+
+    try {
+      const response = await fetch("/api/send-email", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      })
+
+      const data = await response.json()
+
+      if (response.ok) {
+        setSubmitStatus({
+          success: true,
+          message: t(language, "emailSentSuccess"),
+        })
+        // Reset form
+        setFormData({
+          name: "",
+          email: "",
+          subject: "",
+          message: "",
+        })
+      } else {
+        throw new Error(data.message || "Failed to send email")
+      }
+    } catch (error) {
+      setSubmitStatus({
+        success: false,
+        message: t(language, "emailSentError"),
+      })
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -72,7 +109,7 @@ export default function ContactSection() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+        <div className="grid grid-cols-1 lg:grid-cols-1 gap-12">
           {/* Contact Links */}
           <div className="space-y-8">
             <h3 className="text-2xl font-semibold text-white mb-6">
@@ -102,11 +139,22 @@ export default function ContactSection() {
           </div>
 
           {/* Contact Form */}
-          <div className="bg-white/10 backdrop-blur-md rounded-xl p-8 border border-white/20">
+          {/* <div className="bg-white/10 backdrop-blur-md rounded-xl p-8 border border-white/20">
             <h3 className="text-2xl font-semibold text-white mb-6">
               {t(language, "sendMessage")}
             </h3>
             <form onSubmit={handleSubmit} className="space-y-6">
+              {submitStatus && (
+                <div
+                  className={`p-4 rounded-lg ${
+                    submitStatus.success
+                      ? "bg-green-900/50 text-green-300"
+                      : "bg-red-900/50 text-red-300"
+                  }`}
+                >
+                  {submitStatus.message}
+                </div>
+              )}
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
                   <Input
@@ -158,13 +206,20 @@ export default function ContactSection() {
 
               <Button
                 type="submit"
-                className="w-full bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 flex items-center justify-center space-x-2"
+                disabled={isSubmitting}
+                className="w-full bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 flex items-center justify-center space-x-2 disabled:opacity-50"
               >
-                <Send className="w-4 h-4" />
-                <span>{t(language, "sendMessage")}</span>
+                {isSubmitting ? (
+                  <span>{t(language, "sending")}...</span>
+                ) : (
+                  <>
+                    <Send className="w-4 h-4" />
+                    <span>{t(language, "sendMessage")}</span>
+                  </>
+                )}
               </Button>
             </form>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

@@ -61,6 +61,9 @@ export interface Translations {
   yourMessage: string
   phone: string
   email: string
+  sending: string
+  emailSentSuccess: string
+  emailSentError: string
 
   // Project Page
   backToProjects: string

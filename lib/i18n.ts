@@ -71,6 +71,9 @@ const translations: Record<Language, Translations> = {
     yourMessage: "Your Message",
     phone: "Phone",
     email: "Email",
+    sending: "Sending...",
+    emailSentSuccess: "Message sent successfully!",
+    emailSentError: "An error occurred while sending the message. Please try again.",
 
     // Project Page
     backToProjects: "Back to Projects",
@@ -157,6 +160,9 @@ const translations: Record<Language, Translations> = {
     yourMessage: "Twoja wiadomość",
     phone: "Telefon",
     email: "Email",
+    sending: "Wysyłanie...",
+    emailSentSuccess: "Wiadomość wysłana pomyślnie!",
+    emailSentError: "Wystąpił błąd podczas wysyłania wiadomości. Spróbuj ponownie.",
 
     // Project Page
     backToProjects: "Powrót do projektów",
