@@ -47,15 +47,15 @@ const translations: Record<Language, Translations> = {
     aboutDescription1:
       "I'm a passionate full-stack developer with over 8 years of personal coding experience creating digital solutions.",
     aboutDescription2:
-      "I am working on several software development projects, as well as exploring the world of AI through its usage in my programming workflow.",
+      " I am working on several software development projects, as well as exploring the world of AI through its usage in my programming workflow.",
     aboutDescription3:
       "Alongside those, I edit videos professionally, edit and color-grade photos. I also do UI/UX experiences for the Web.",
     aboutDescription4:
       "I'm a hard-working person, relentless when it comes to deadlines, always set on achieving the desired goal.",
     aboutDescription5:
-      "I consider myself a team player, owing it to my sharp social skills.",
+      " I consider myself a team player, owing it to my sharp social skills.",
     aboutDescription6: 
-      "I can also boast of my English as a native speaker in that language.",
+      " I can also boast of my English as a native speaker in that language.",
     projectsCompleted: "Personal / Commission Projects Completed",
     yearsExperience: "Years of Coding Experience",
 
@@ -133,17 +133,17 @@ const translations: Record<Language, Translations> = {
     aboutDescription1:
       "Jestem pasjonatem programowania z ponad 8-letnim doświadczeniem w tworzeniu różnych programów i projektów.",
     aboutDescription2:
-      "Pracuję nad kilkoma projektami programistycznymi, a także eksploruję świat AI poprzez jego zastosowanie w moim workflow.",
+      " Pracuję nad kilkoma projektami programistycznymi, a także eksploruję świat AI poprzez jego zastosowanie w moim workflow.",
     aboutDescription3:
       "Oprócz tego profesjonalnie edytuję filmy, edytuję i retuszuję zdjęcia. Zajmuję się również doświadczeniami UI/UX dla sieci.",
     aboutDescription4:
       "Jestem pracowity, nieustępliwy jeśli chodzi o terminy, zawsze dążący do osiągnięcia zamierzonego celu.",
     aboutDescription5:
-      "Uważam się za gracza zespołowego, co zawdzięczam moim umiejętnościom społecznym.",
+      " Uważam się za gracza zespołowego, co zawdzięczam moim umiejętnościom społecznym.",
     aboutDescription6:
-      "Mogę również pochwalić się moim angielskim jako native speaker w tym języku.",
-    projectsCompleted: "Ukończone Projekty",
-    yearsExperience: "Lat Doświadczenia",
+      " Mogę również pochwalić się moim angielskim jako native speaker w tym języku.",
+    projectsCompleted: "Ukończone Projekty Osobiste / Zlecenia",
+    yearsExperience: "Lat Doświadczenia w Kodowaniu",
 
     // Contact Section
     contactTitle: "Skontaktuj się",

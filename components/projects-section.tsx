@@ -8,15 +8,15 @@ import { t } from "@/lib/i18n"
 const projects = [
   {
     id: "box-counter-app",
-    title: "Box Counter App",
+    title: "Box Inventory Management App",
     description: "A complex web application for managing warehouse box inventory",
     technologies: ["Next.js", "TypeScript", "NeonDB", "ChartJS", "Tailwind CSS", "PostgreSQL", "Auth.js" ],
     year: "2024",
     type: "Commission",
-    image: "/placeholder.svg",
+    image: "/box-1.jpg",
     link: "",
     featured: true,
-    inProgress: false
+    inProgress: false,
   },
   {
     id: "blossom-boutique",
@@ -25,9 +25,9 @@ const projects = [
     technologies: ["Next.js", "TypeScript", "Tailwind CSS", "PostgreSQL", "NeonDB"],
     year: "2024",
     type: "Private",
-    image: "/placeholder.svg",
+    image: "/bb-2.jpg",
     link: "",
-    featured: true
+    featured: true,
   },
   {
     id: "socioeconomic-statistic-analysis",
@@ -36,19 +36,40 @@ const projects = [
     technologies: ["RESTful API", "Next.js", "Auth.js", "PostgreSQL", "MongoDB", "Tailwind CSS", "Docker", "Docker Compose"],
     year: "2024",
     type: "Private",
-    image: "/placeholder.svg",
+    image: "/stats-1.jpg",
     link: "",
     featured: true,
   },
   // Regular projects
   {
-    id: "vision-ai",
-    title: "Vision AI research",
-    description: "A research project on YOLOv8 and to recognize objects in images",
-    technologies: ["Python", "YOLOv8", "Pandas", "NumPy"],
+    id: "passapp",
+    title: "PassApp",
+    description: "A password managment solutuion",
+    technologies: ["Java", "Android Studio", "SQLite", "Swift", "Next.js"],
     year: "2024",
     type: "Private",
-    image: "placeholder.svg",
+    image: "/old/stars.jpg",
+    link: "#",
+    inProgress: true,
+  },
+  {
+    id: "nie-musze",
+    title: "Music Album Cover",
+    description: "Album cover design for the album Nie Muszę by Patrycja Wilgos",
+    technologies: ["GIMP", "Photography", "Design"],
+    year: "2024",
+    type: "Commission",
+    image: "/nm-1.jpg",
+    link: "https://open.spotify.com/album/1IE2tKdMuImWewcjzxaNAd",
+  },
+  {
+    id: "vision-ai",
+    title: "Vision AI research",
+    description: "A research project on YOLOv11 and to recognize objects in images",
+    technologies: ["Python", "YOLOv11", "Pandas", "NumPy"],
+    year: "2024",
+    type: "Private",
+    image: "/ai-2.jpg",
     link: "",
   },
   {
@@ -58,7 +79,7 @@ const projects = [
     technologies: ["HTML", "CSS", "JavaScript"],
     year: "2023",
     type: "Commission",
-    image: "/placeholder.svg",
+    image: "/landing-1.jpg",
     link: "",
   },
   {
@@ -68,7 +89,7 @@ const projects = [
     technologies: ["HTML", "CSS", "JavaScript"],
     year: "2023",
     type: "Private",
-    image: "/placeholder.svg",
+    image: "/personal-2.jpg",
     link: "https://penguinpops.github.io/PortfolioWebsite/"
   },
   {
@@ -79,7 +100,8 @@ const projects = [
     year: "2023",
     type: "Private",
     image: "/old/formatcbackground.jpg",
-    link: "https://github.com/PenguinPops/Format-C-UI-app"
+    link: "https://github.com/PenguinPops/Format-C-UI-app",
+    lightbg: true
   },
   {
     id: "pong-game",
@@ -89,7 +111,8 @@ const projects = [
     year: "2023",
     type: "Private",
     image: "/old/pongback.jpg",
-    link: "https://play.unity.com/mg/other/pong-3d-w"
+    link: "https://play.unity.com/mg/other/pong-3d-w",
+    lightbg: true
   },
   {
     id: "perigord-media",
@@ -98,7 +121,7 @@ const projects = [
     technologies: ["DaVinci Resolve"],
     year: "2023",
     type: "Commission",
-    image: "placeholder.svg",
+    image: "/chemia-1.jpg",
     link: "https://drive.google.com/drive/folders/1X9wXs7brJHFsO-k1zsy6P_AX0tW9cD00?usp=sharing"
   },
   {
@@ -112,13 +135,13 @@ const projects = [
     link: "https://www.olx.pl/d/oferta/powiesc-fantasy-radymentia-krysztal-mocy-CID751-IDR8FY6.html"
   },
   {
-    id: "angular-spa",
+    id: "ekromka",
     title: "AngularJS SPA",
     description: "Uni project on the basics of Web3",
     technologies: ["HTML", "CSS", "Angular"],
     year: "2024",
     type: "Private",
-    image: "",
+    image: "/ekromka-4.jpg",
     link: "https://github.com/PenguinPops/lab1"
   }
 ];
@@ -154,9 +177,9 @@ export default function ProjectsSection() {
                   <img
                     src={project.image || "/placeholder.svg"}
                     alt={project.title}
-                    className={`w-full h-full object-cover transition-transform duration-300 ${
-                      project.inProgress ? 'blur-sm brightness-50' : 'group-hover:scale-110'
-                    }`}
+                    className={`w-full h-full object-cover transition-transform duration-300 scale-125 ${
+                      project.inProgress ? 'blur-sm brightness-50' : 'group-hover:scale-150'
+                    } ${project.lightbg ? '' : 'brightness-[30%]'}`}
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
                 </div>
@@ -248,6 +271,9 @@ export default function ProjectsSection() {
                       <h3 className="text-white font-semibold text-lg">
                         {t(language, "comingSoon")}
                       </h3>
+                      <p className="text-gray-300 text-sm mt-1">
+                        {t(language, "wipDescription")}
+                      </p>
                     </div>
                   </div>
                 )}
@@ -256,7 +282,10 @@ export default function ProjectsSection() {
                   <img
                     src={project.image || "/placeholder.svg"}
                     alt={project.title}
-                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+                    className={`w-full h-full object-cover transition-transform duration-300 scale-110 group-hover:scale-125
+                    ${
+                      project.inProgress ? 'blur-sm brightness-50' : 'group-hover:scale-150'
+                    } ${project.lightbg ? '' : 'brightness-[30%]'}`}
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
                 </div>

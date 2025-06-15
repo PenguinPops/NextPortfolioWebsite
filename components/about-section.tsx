@@ -42,7 +42,7 @@ export default function AboutSection() {
           <div className="order-1 lg:order-2 flex justify-center">
             <div className="relative">
               <div className="w-80 h-80 rounded-full overflow-hidden border-4 border-purple-500/30 shadow-2xl">
-                <img src="/old/pic.png?height=320&width=320" alt="Profile" className="w-full h-full object-cover" />
+                <img src="/old/im.jpg?height=320&width=320" alt="Profile" className="w-full h-full object-cover" />
               </div>
               <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-gray-500/20 to-gray-500/20" />
             </div>

@@ -15,8 +15,10 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
+  params
 }: {
   children: React.ReactNode
+  params: {locale: string}
 }) {
   return (
     <html lang="en" className="scroll-smooth">
