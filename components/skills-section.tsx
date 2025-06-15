@@ -1,42 +1,59 @@
 "use client"
 
 import { useEffect, useState } from "react"
+import { t } from "@/lib/i18n"
+import { useLanguage } from "@/hooks/use-language"
 
-const skills = [
-  {
-    title: "Frontend Development",
-    description: "React, Next.js, Vue.js, TypeScript, Tailwind CSS",
-    level: 90,
-  },
-  {
-    title: "Backend Development",
-    description: "Node.js, Express, Python, PostgreSQL, MongoDB",
-    level: 85,
-  },
-  {
-    title: "Mobile Development",
-    description: "React Native, Flutter, iOS/Android development",
-    level: 75,
-  },
-  {
-    title: "DevOps & Cloud",
-    description: "AWS, Docker, Kubernetes, CI/CD, Vercel",
-    level: 80,
-  },
-  {
-    title: "UI/UX Design",
-    description: "Figma, Adobe XD, Responsive Design, User Research",
-    level: 70,
-  },
-  {
-    title: "Database Management",
-    description: "SQL, NoSQL, Database Design, Query Optimization",
-    level: 85,
-  },
-]
+
 
 export default function SkillsSection() {
   const [isVisible, setIsVisible] = useState(false)
+
+  const { language } = useLanguage()
+
+  const skills = [
+  {
+    title: t(language, "title1"),
+    description: t(language, "description1"),
+    level: 95,
+  },
+  {
+    title: t(language, "title2"),
+    description: t(language, "description2"),
+    level: 90,
+  },
+  {
+    title: t(language, "title3"),
+    description: t(language, "description3"),
+    level: 85,
+  },
+  {
+    title: t(language, "title4"),
+    description: t(language, "description4"),
+    level: 85,
+  },
+  {
+    title: t(language, "title5"),
+    description: t(language, "description5"),
+    level: 80,
+  },
+  {
+    title: t(language, "title6"),
+    description: t(language, "description6"),
+    level: 70,
+  },
+  {
+    title: t(language, "title7"),
+    description: t(language, "description7"),
+    level: 70,
+  },
+  {
+    title: t(language, "title8"),
+    description: t(language, "description8"),
+    level: 50,
+  },
+
+]
 
   useEffect(() => {
     const observer = new IntersectionObserver(

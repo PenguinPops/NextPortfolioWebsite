@@ -41,8 +41,9 @@ export default function Header() {
     <header className="fixed top-0 w-full z-50 bg-black/20 backdrop-blur-md border-b border-white/10">
       <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8">
         <div className="flex lg:flex-1">
-          <a href="#" className="-m-1.5 p-1.5">
+          <a href="#" className="-m-1.5 p-1.5 flex flex-col">
             <span className="text-2xl font-bold text-white">{t(language, "headerTitle")}</span>
+            <span className="text-sm text-gray-400">{t(language, "subheader")}</span> 
           </a>
         </div>
 

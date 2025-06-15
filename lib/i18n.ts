@@ -4,6 +4,7 @@ const translations: Record<Language, Translations> = {
   en: {
     // Header
     headerTitle: "Portfolio",
+    subheader: "Michal Soltys",
     projects: "Projects",
     skills: "Skills",
     about: "About",
@@ -11,29 +12,57 @@ const translations: Record<Language, Translations> = {
 
     // Projects Section
     featuredProjects: "Featured Projects",
-    projectsDescription: "A collection of projects that showcase my skills and experience in web development",
+    projectsDescription: "My most recent and best projects showcasing my current level of expertise",
     viewDetails: "View Details →",
+    comingSoon: "Coming Soon",
+    workInProgress: "Work in Progress",
+    wipDescription: "This project is under active development and will be available soon.",
+    otherProjects: "Other Projects",
+    otherProjectsDescription:
+      "A collection of projects that cover various technologies and tools I work with",
 
     // Skills Section
     skillsTitle: "Skills & Expertise",
     skillsDescription: "Technologies and tools I work with to bring ideas to life",
     proficiency: "Proficiency",
+    title1: "AI Workflow and Automation",
+    description1: "ChatGPT, DeepSeek, Claude, Gemini, DuckAI, DeepSeek API, Web Scraping, Googling, Stack Overflow",
+    title2: "Frontend Development",
+    description2: "React, Next.js, TypeScript, Tailwind CSS, ChartJS",
+    title3: "Backend Development",
+    description3: "Node.js, Express.js, RESTful APIs, MongoDB, PostgreSQL",
+    title4: "Database Management",
+    description4: "SQL, NoSQL, Database Design, Query Optimization",
+    title5: "DevOps & Cloud",
+    description5: "Docker, Kubernetes, Vercel",
+    title6: "AI and Machine Learning",
+    description6: "YOLOv8, Vision detection design, Data Analysis, Model Training",
+    title7: "UI/UX Design & Presentation",
+    description7: "Figma, Visily, Photoshop, Davinci Resolve, Responsive Design, User Research",
+    title8: "Mobile Development",
+    description8: "Android Native (Java), iOS Native (Swift)",
 
     // About Section
     aboutTitle: "About Me",
     aboutDescription1:
-      "I'm a passionate full-stack developer with over 5 years of experience creating digital solutions that make a difference. I specialize in modern web technologies and love turning complex problems into simple, beautiful designs.",
+      "I'm a passionate full-stack developer with over 8 years of personal coding experience creating digital solutions.",
     aboutDescription2:
-      "When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, or sharing knowledge with the developer community. I believe in writing clean, maintainable code and creating user experiences that delight.",
+      "I am working on several software development projects, as well as exploring the world of AI through its usage in my programming workflow.",
     aboutDescription3:
-      "I'm always excited to work on challenging projects and collaborate with teams that share my passion for innovation and excellence.",
-    projectsCompleted: "Projects Completed",
-    yearsExperience: "Years Experience",
+      "Alongside those, I edit videos professionally, edit and color-grade photos. I also do UI/UX experiences for the Web.",
+    aboutDescription4:
+      "I'm a hard-working person, relentless when it comes to deadlines, always set on achieving the desired goal.",
+    aboutDescription5:
+      "I consider myself a team player, owing it to my sharp social skills.",
+    aboutDescription6: 
+      "I can also boast of my English as a native speaker in that language.",
+    projectsCompleted: "Personal / Commission Projects Completed",
+    yearsExperience: "Years of Coding Experience",
 
     // Contact Section
     contactTitle: "Get In Touch",
     contactDescription:
-      "Ready to work together? I'd love to hear about your project and discuss how we can bring your ideas to life.",
+      "Ready to work together? I'd love to hear from you! Leave a message below and I'll get back to you as soon as possible.",
     letsConnect: "Let's Connect",
     sendMessage: "Send a Message",
     yourName: "Your Name",
@@ -60,6 +89,7 @@ const translations: Record<Language, Translations> = {
   pl: {
     // Header
     headerTitle: "Portfolio",
+    subheader: "Michał Sołtys",
     projects: "Projekty",
     skills: "Umiejętności",
     about: "O mnie",
@@ -68,29 +98,57 @@ const translations: Record<Language, Translations> = {
     // Projects Section
     featuredProjects: "Wybrane Projekty",
     projectsDescription:
-      "Kolekcja projektów, które pokazują moje umiejętności i doświadczenie w tworzeniu stron internetowych",
+      "Moje najnowsze i najlepsze projekty, które pokazują mój aktualny poziom umiejętności",
     viewDetails: "Zobacz szczegóły →",
+    comingSoon: "Wkrótce",
+    workInProgress: "W trakcie realizacji",
+    wipDescription: "Ten projekt jest w trakcie rozwoju i będzie dostępny wkrótce.",
+    otherProjects: "Inne Projekty",
+    otherProjectsDescription:
+    "Kolekcja projektów, dotyczących różnych technologii i narzędzi",
 
     // Skills Section
     skillsTitle: "Umiejętności i Ekspertyza",
     skillsDescription: "Technologie i narzędzia, z których korzystam, aby wcielać pomysły w życie",
     proficiency: "Biegłość",
+    title1: "AI Workflow i Automatyzacja",
+    description1: "ChatGPT, DeepSeek, Claude, Gemini, DuckAI, DeepSeek API, Web Scraping, Googling, Stack Overflow",
+    title2: "Frontend Development",
+    description2: "React, Next.js, TypeScript, Tailwind CSS, ChartJS",
+    title3: "Backend Development",
+    description3: "Node.js, Express.js, RESTful APIs, MongoDB, PostgreSQL",
+    title4: "Zarządzanie Bazą Danych",
+    description4: "SQL, NoSQL, Projektowanie Bazy Danych, Optymalizacja Zapytania",
+    title5: "DevOps i Chmura",
+    description5: "Docker, Kubernetes, Vercel",
+    title6: "AI i Uczenie Maszynowe",
+    description6: "YOLOv8, Projektowanie detekcji wizji, Analiza danych, Trening modeli", 
+    title7: "UI/UX Design i Prezentacja",
+    description7: "Figma, Visily, Photoshop, Davinci Resolve, Responsive Design, Badania Użytkowników",
+    title8: "Aplikacje Mobilne",
+    description8: "Android Native (Java), iOS Native (Swift)",
 
     // About Section
     aboutTitle: "O mnie",
     aboutDescription1:
-      "Jestem pasjonatem full-stack developmentu z ponad 5-letnim doświadczeniem w tworzeniu rozwiązań cyfrowych, które mają znaczenie. Specjalizuję się w nowoczesnych technologiach webowych i uwielbiam przekształcać złożone problemy w proste, piękne projekty.",
+      "Jestem pasjonatem programowania z ponad 8-letnim doświadczeniem w tworzeniu różnych programów i projektów.",
     aboutDescription2:
-      "Kiedy nie koduję, można mnie znaleźć eksplorującego nowe technologie, przyczyniającego się do projektów open-source lub dzielącego się wiedzą ze społecznością deweloperów. Wierzę w pisanie czystego, łatwego w utrzymaniu kodu i tworzenie doświadczeń użytkownika, które zachwycają.",
+      "Pracuję nad kilkoma projektami programistycznymi, a także eksploruję świat AI poprzez jego zastosowanie w moim workflow.",
     aboutDescription3:
-      "Zawsze jestem podekscytowany pracą nad wymagającymi projektami i współpracą z zespołami, które podzielają moją pasję do innowacji i doskonałości.",
+      "Oprócz tego profesjonalnie edytuję filmy, edytuję i retuszuję zdjęcia. Zajmuję się również doświadczeniami UI/UX dla sieci.",
+    aboutDescription4:
+      "Jestem pracowity, nieustępliwy jeśli chodzi o terminy, zawsze dążący do osiągnięcia zamierzonego celu.",
+    aboutDescription5:
+      "Uważam się za gracza zespołowego, co zawdzięczam moim umiejętnościom społecznym.",
+    aboutDescription6:
+      "Mogę również pochwalić się moim angielskim jako native speaker w tym języku.",
     projectsCompleted: "Ukończone Projekty",
     yearsExperience: "Lat Doświadczenia",
 
     // Contact Section
     contactTitle: "Skontaktuj się",
     contactDescription:
-      "Gotowy do współpracy? Chciałbym usłyszeć o Twoim projekcie i omówić, jak możemy wcielić Twoje pomysły w życie.",
+      "Mogę służyć pomocą? Coś Cię zainteresowało? Zostaw wiadomość poniżej, a jak najszybciej się z Tobą skontaktuję.",
     letsConnect: "Nawiążmy kontakt",
     sendMessage: "Wyślij wiadomość",
     yourName: "Twoje imię",

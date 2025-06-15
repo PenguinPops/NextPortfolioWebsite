@@ -5,67 +5,140 @@ import { Button } from "@/components/ui/button"
 
 // This would typically come from a database or CMS
 const projects = {
-  "ecommerce-platform": {
-    title: "E-commerce Platform",
-    description:
-      "A comprehensive full-stack e-commerce solution built with modern technologies. Features include user authentication, product catalog, shopping cart, payment processing with Stripe, order management, and admin dashboard.",
-    longDescription: `This e-commerce platform represents a complete solution for online retail businesses. Built with Next.js and TypeScript for type safety and performance, it leverages PostgreSQL for robust data management and Stripe for secure payment processing.
+  "passapp": {
+    title: "PassApp",
+    description: "A secure password management application for personal use with encryption capabilities.",
+    longDescription: `PassApp is an Electron-based desktop application designed to securely store and manage passwords using CryptoJS encryption. Developed as a personal project to explore secure credential storage solutions.
 
 Key features include:
-- User authentication and authorization
-- Product catalog with search and filtering
-- Shopping cart and wishlist functionality
-- Secure payment processing with Stripe
-- Order tracking and management
-- Admin dashboard for inventory management
-- Responsive design for all devices
-- SEO optimization for better visibility
+- AES-256 encryption for all stored passwords
+- Local storage with no cloud dependencies
+- Master password protection
+- Password generator with customizable parameters
+- Clean, intuitive user interface
+- Cross-platform compatibility
+- Offline functionality
 
-The platform is designed with scalability in mind, using modern React patterns and optimized database queries to handle high traffic loads.`,
-    technologies: ["Next.js", "TypeScript", "Stripe", "PostgreSQL", "Tailwind CSS", "Prisma"],
+The application was built with security as the primary focus, implementing best practices for password management and data encryption. The architecture ensures that even if the data store is compromised, the encrypted data remains protected.`,
+    technologies: ["Electron", "CryptoJS", "JavaScript", "HTML/CSS"],
     images: [
-      "/placeholder.svg?height=400&width=600",
-      "/placeholder.svg?height=400&width=600",
-      "/placeholder.svg?height=400&width=600",
-      "/placeholder.svg?height=400&width=600",
+      "/LOGO/Black_1024.png",
+      "/Media/formatCprev.jpg", // Using a placeholder since no PassApp screenshot was provided
+      "/LOGO/LogoMap_1024_3.png"
     ],
-    liveUrl: "https://example.com",
-    githubUrl: "https://github.com/username/ecommerce-platform",
-    date: "March 2024",
+    liveUrl: undefined,
+    githubUrl: "https://github.com/PenguinPops",
+    date: "2024",
     client: "Personal Project",
-    category: "Full-Stack Development",
+    category: "Desktop Application",
   },
-  "task-management-app": {
-    title: "Task Management App",
-    description:
-      "A collaborative task management application with real-time updates, team collaboration features, and intuitive project organization.",
-    longDescription: `This task management application was designed to streamline team collaboration and project organization. Built with React and Node.js, it features real-time updates using Socket.io and a flexible MongoDB database structure.
+  "format-cpp": {
+    title: "Format C++",
+    description: "Desktop utility application for formatting C++ code with custom presets.",
+    longDescription: `Format C++ is an Electron application developed to streamline my C++ development workflow by automating code formatting according to personal preferences and project requirements.
 
-The application includes:
-- Real-time collaboration with live updates
-- Project and task organization with drag-and-drop
-- Team member management and permissions
-- File attachments and comments
-- Time tracking and reporting
-- Mobile-responsive design
-- Dark/light theme support
-- Integration with popular tools
+Features include:
+- Custom formatting presets
+- Batch processing of multiple files
+- Integration with code editors
+- Light/dark theme support
+- Keyboard shortcuts for quick formatting
+- Formatting history and undo functionality
 
-The real-time functionality ensures that team members always see the latest updates, making collaboration seamless and efficient.`,
-    technologies: ["React", "Node.js", "Socket.io", "MongoDB", "Express.js", "JWT"],
+The application saves significant time during code reviews and collaboration by maintaining consistent code style across projects. It's particularly useful for large codebases where manual formatting would be time-consuming.`,
+    technologies: ["C++", "Electron", "JavaScript", "HTML/CSS"],
     images: [
-      "/placeholder.svg?height=400&width=600",
-      "/placeholder.svg?height=400&width=600",
-      "/placeholder.svg?height=400&width=600",
+      "/LOGO/PurpleW_1024.png",
+      "/Media/formatCprev.jpg",
+      "/LOGO/WhiteRed_1024.png"
     ],
-    liveUrl: "https://example.com",
-    githubUrl: "https://github.com/username/task-management",
-    date: "January 2024",
-    client: "Startup Company",
-    category: "Web Application",
+    liveUrl: undefined,
+    githubUrl: "https://github.com/PenguinPops/Format-C-UI-app",
+    date: "2023",
+    client: "Personal Project",
+    category: "Developer Tools",
   },
-  // Add more projects as needed
-}
+  "pong-3d": {
+    title: "Pong 3D",
+    description: "A modern 3D reinterpretation of the classic Pong game with enhanced visuals.",
+    longDescription: `This Unity-based project reimagines the classic Pong game with 3D graphics and modern gameplay elements while maintaining the simple, addictive nature of the original.
+
+Game features:
+- 3D rendering with dynamic lighting
+- Customizable paddle and ball physics
+- Multiple game modes (Classic, Timed, Endless)
+- Particle effects for visual feedback
+- Score tracking and high scores
+- Responsive controls for both keyboard and gamepad
+
+Developed as an exercise in Unity game development, this project demonstrates fundamental game programming concepts including collision detection, physics simulation, and game state management.`,
+    technologies: ["C#", "Unity", "3D Modeling"],
+    images: [
+      "/LOGO/Black_1024.png",
+      "/Media/pongprev.jpg",
+      "/LOGO/WhiteRed_1024.png"
+    ],
+    liveUrl: "https://play.unity.com/mg/other/pong-3d-w",
+    githubUrl: undefined,
+    date: "2023",
+    client: "Personal Project",
+    category: "Game Development",
+  },
+  "perigord-media": {
+    title: "Perigord Media",
+    description: "Professional video editing services for short-form social media content.",
+    longDescription: `Commissioned video editing work for Perigord Media, specializing in creating engaging short-form content for TikTok and other social platforms.
+
+Services provided:
+- Professional video editing and color grading
+- Motion graphics and text animations
+- Sound design and audio mixing
+- Content optimization for platform algorithms
+- Trend analysis and creative direction
+- Brand-consistent content creation
+- Rapid turnaround for time-sensitive content
+
+This commercial work demonstrates expertise in DaVinci Resolve and understanding of social media content strategies, particularly for viral marketing and audience engagement.`,
+    technologies: ["DaVinci Resolve", "Color Grading", "Motion Graphics", "Sound Design"],
+    images: [
+      "/Media/tiktok.png",
+      "/Media/chem.gif",
+      "/Media/podpis.png"
+    ],
+    liveUrl: "https://drive.google.com/drive/folders/1X9wXs7brJHFsO-k1zsy6P_AX0tW9cD00?usp=sharing",
+    githubUrl: undefined,
+    date: "2023",
+    client: "Perigord Media",
+    category: "Video Production",
+  },
+  "portfolio-website": {
+    title: "Portfolio Website",
+    description: "Custom-designed and coded personal portfolio website showcasing my work.",
+    longDescription: `A fully custom portfolio website designed and developed from scratch to showcase my projects and skills. The site features modern animations and responsive design.
+
+Technical highlights:
+- Custom animated background using Canvas API
+- Responsive layout for all device sizes
+- Smooth scroll animations and transitions
+- Interactive project showcases
+- Optimized performance and SEO
+- Contact form functionality
+- Dark/light mode support
+
+This project demonstrates comprehensive frontend development skills including HTML5, CSS3, JavaScript, and UI/UX design principles. The website serves as both a portfolio piece and a functional showcase for other work.`,
+    technologies: ["HTML5", "CSS3", "JavaScript", "Canvas API", "UI/UX Design"],
+    images: [
+      "/LOGO/LogoMap_1024_3.png",
+      "/Media/page.jpg",
+      "/LOGO/WhiteRed_1024.png"
+    ],
+    liveUrl: "https://penguinpops.github.io/PortfolioWebsite/",
+    githubUrl: "https://github.com/PenguinPops/PortfolioWebsite",
+    date: "2023",
+    client: "Personal Project",
+    category: "Web Development",
+  }
+};
 
 interface PageProps {
   params: {
@@ -73,8 +146,8 @@ interface PageProps {
   }
 }
 
-export default function ProjectPage({ params }: PageProps) {
-  const project = projects[params.name as keyof typeof projects]
+export default async function ProjectPage({ params }: PageProps) {
+  const project = await projects[params.name as keyof typeof projects]
 
   if (!project) {
     notFound()
