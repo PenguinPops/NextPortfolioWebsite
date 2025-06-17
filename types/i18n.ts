@@ -9,6 +9,10 @@ export interface Translations {
   about: string
   contact: string
 
+  // Warning
+  warning: string
+  warningMessage: string
+
   // Projects Section
   featuredProjects: string
   projectsDescription: string
@@ -49,6 +53,10 @@ export interface Translations {
   aboutDescription6: string
   projectsCompleted: string
   yearsExperience: string
+  excellent: string
+  advanced: string
+  proficient: string
+  fair: string
 
   // Contact Section
   contactTitle: string

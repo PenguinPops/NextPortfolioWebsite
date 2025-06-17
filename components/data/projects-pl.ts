@@ -19,10 +19,13 @@ export const projects = {
   "box-counter-app": {
     title: "Aplikacja Statystyk Pojemników",
     description: "Zaawansowana aplikacja webowa do śledzenia i zarządzania inwentarzem pojemników.",
-    longDescription: `Box Counter App to aplikacja webowa zaprojektowana, aby pomóc użytkownikom efektywnie śledzić i zarządzać swoim inwentarzem pojemników. Posiada przyjazny interfejs użytkownika z zaawansowanymi funkcjonalnościami do liczenia, kategoryzowania i wyszukiwania pudeł.
+    longDescription: `Statystyki Pojemników to aplikacja webowa zaprojektowana aby pomóc użytkownikom efektywnie śledzić i zarządzać swoim inwentarzem pojemników. Posiada przyjazny interfejs użytkownika z zaawansowanymi funkcjonalnościami do liczenia, kategoryzowania i wyszukiwania wpisów.
 
-    Jest to projekt zlecony, który pokazuje moje umiejętności w zakresie pełnego stosu web developmentu, w tym integracji frontendu i backendu, zarządzania bazą danych i responsywnego designu.`,
-    technologies: ["Next.js", "TypeScript", "NeonDB", "ChartJS", "Tailwind CSS", "PostgreSQL", "Auth.js"],
+    Jest to projekt zlecony, który pokazuje moje umiejętności w zakresie pełnego stosu web developmentu, w tym integracji frontendu i backendu, zarządzania bazą danych i responsywnego designu.
+
+    W celu dokładnego obejrzenia aplikacji można wystąpić o dostęp za pomocą danych tymczasowych, wystarczy wysłać wiadomość email lub wiadomość prywatną poprzez Linkedin.`,
+    
+    technologies: ["Next.js", "TypeScript", "NeonDB", "RESTful API", "Tailwind CSS", "PostgreSQL", "Auth.js", "ChartJS"],
     images: [
       "/box-1.jpg",
       "/box-2.jpg",

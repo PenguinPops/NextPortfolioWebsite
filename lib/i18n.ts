@@ -10,6 +10,10 @@ const translations: Record<Language, Translations> = {
     about: "About",
     contact: "Contact",
 
+    // Warning Message
+    warning: "Warning: ",
+    warningMessage: "The site is undergoing translation and may not be fully translated yet or contain errors. Thank you for your understanding!",
+
     // Projects Section
     featuredProjects: "Featured Projects",
     projectsDescription: "My most recent and best projects showcasing my current level of expertise",
@@ -41,6 +45,10 @@ const translations: Record<Language, Translations> = {
     description7: "Figma, Visily, Photoshop, Davinci Resolve, Responsive Design, User Research",
     title8: "Mobile Development",
     description8: "Android Native (Java), iOS Native (Swift)",
+    excellent: "Excellent",
+    advanced: "Advanced",
+    proficient: "Proficient",
+    fair: "Fair",
 
     // About Section
     aboutTitle: "About Me",
@@ -98,6 +106,11 @@ const translations: Record<Language, Translations> = {
     about: "O mnie",
     contact: "Kontakt",
 
+    // Warning Message
+    warning: "Uwaga: ",
+    warningMessage:
+      "Strona jest w trakcie translacji i może nie być jeszcze w pełni przetłumaczona lub zawierać błędy. Przepraszamy za utrudnienia.",
+
     // Projects Section
     featuredProjects: "Wybrane Projekty",
     projectsDescription:
@@ -130,6 +143,10 @@ const translations: Record<Language, Translations> = {
     description7: "Figma, Visily, Photoshop, Davinci Resolve, Responsive Design, Badania Użytkowników",
     title8: "Aplikacje Mobilne",
     description8: "Android Native (Java), iOS Native (Swift)",
+    excellent: "Doskonała",
+    advanced: "Zaawansowana",
+    proficient: "Biegła",
+    fair: "Przeciętna",
 
     // About Section
     aboutTitle: "O mnie",
