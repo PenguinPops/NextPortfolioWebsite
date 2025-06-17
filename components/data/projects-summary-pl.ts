@@ -92,7 +92,7 @@ export const projects = [
   technologies: ["C++", "Electron"],
   year: "2023",
   type: "Private",
-  image: "/old/formatcbackground.jpg",
+  image: "/old/formatCbackground.jpg",
   link: "https://github.com/PenguinPops/Format-C-UI-app",
   lightbg: true
  },
